@@ -143,7 +143,9 @@ const options = {
 
 const App = () => (
   <div className="container">
-    <div className="navBar">1</div>
+    <div className="navBar">
+      <Navbar />
+    </div>
     <div className="sideBar">2</div>
     <div className="mainContent">
       <div className="mainContent-container">
