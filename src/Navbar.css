@@ -1,5 +1,4 @@
 .navbar {
-  background: pink;
   display: grid;
   grid-template-rows: auto;
   grid-template-columns: 1fr; /* only column intially */
@@ -7,20 +6,22 @@
   justify-items: stretch;
   align-items: stretch;
   column-gap: 20px;
+  height: 50px;
 }
 
 .logo {
-  background: green;
   width: 60px;
   grid-column: -3; /* create an implicit one at the beginning */
+  align-self: center;
 }
 
 .menus {
-  background: lightsalmon;
   display: flex;
   flex-direction: row;
   justify-content: start;
+  align-items: center;
   grid-column: 1; /* take the explicit one */
+  padding-left: 150px;
 }
 
 .menus * {
