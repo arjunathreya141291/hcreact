@@ -17,12 +17,12 @@ const options = {
   },
 
   title: {
-    text: "Sugar and fat intake per country",
+    text: "Zero search results term",
   },
 
-  subtitle: {
-    text: 'Source: <a href="http://www.euromonitor.com/">Euromonitor</a> and <a href="https://data.oecd.org/">OECD</a>',
-  },
+  //   subtitle: {
+  //     text: 'Source: <a href="http://www.euromonitor.com/">Euromonitor</a> and <a href="https://data.oecd.org/">OECD</a>',
+  //   },
 
   accessibility: {
     point: {
@@ -34,7 +34,7 @@ const options = {
   xAxis: {
     gridLineWidth: 1,
     title: {
-      text: "Daily fat intake",
+      text: "Searches",
     },
     labels: {
       format: "{value} gr",
@@ -65,7 +65,7 @@ const options = {
     startOnTick: false,
     endOnTick: false,
     title: {
-      text: "Daily sugar intake",
+      text: "Zero results frequency",
     },
     labels: {
       format: "{value} gr",
