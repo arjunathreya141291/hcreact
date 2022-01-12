@@ -3,6 +3,10 @@ import { render } from "react-dom";
 import Highcharts from "highcharts";
 import HighchartsReact from "highcharts-react-official";
 import HC_more from "highcharts/highcharts-more";
+import Navbar from "./Navbar";
+
+import "./index.css";
+
 HC_more(Highcharts);
 
 const options = {
@@ -138,8 +142,18 @@ const options = {
 };
 
 const App = () => (
-  <div>
-    <HighchartsReact highcharts={Highcharts} options={options} />
+  <div className="container">
+    <div className="navBar">1</div>
+    <div className="sideBar">2</div>
+    <div className="mainContent">
+      <div className="mainContent-container">
+        <div className="breadcrumbs">1</div>
+        <div className="labels">2</div>
+        <div className="graphs">3</div>
+      </div>
+    </div>
+    {/* <Navbar />
+    <HighchartsReact highcharts={Highcharts} options={options} /> */}
   </div>
 );
 
