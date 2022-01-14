@@ -47,7 +47,7 @@ const options = {
       text: "Searches",
     },
     labels: {
-      format: "{value} gr",
+      format: "{value} k",
     },
     // plotLines: [
     //   {
@@ -78,7 +78,7 @@ const options = {
       text: "Zero results frequency",
     },
     labels: {
-      format: "{value} gr",
+      format: "{value} %",
     },
     maxPadding: 0.2,
     // plotLines: [
@@ -108,9 +108,9 @@ const options = {
     headerFormat: "<table>",
     pointFormat:
       '<tr><th colspan="2"><h3>{point.country}</h3></th></tr>' +
-      "<tr><th>Fat intake:</th><td>{point.x}g</td></tr>" +
-      "<tr><th>Sugar intake:</th><td>{point.y}g</td></tr>" +
-      "<tr><th>Obesity (adults):</th><td>{point.z}%</td></tr>",
+      "<tr><th>Searches:</th><td>{point.x}</td></tr>" +
+      "<tr><th>Zero Results Frequency:</th><td>{point.y}%</td></tr>" +
+      "<tr><th>Lost Site Engagement:</th><td>{point.z}%</td></tr>",
     footerFormat: "</table>",
     followPointer: true,
   },
@@ -128,27 +128,157 @@ const options = {
     {
       data: [
         {
-          x: 95,
-          y: 95,
-          z: 100.8,
-          name: "BE",
-          country: "Belgium",
-          color: "#228B22",
+          x: 99,
+          y: 36.430464039415966,
+          z: 47.56649168853893,
+          name: "christmas",
+          country: "christmas",
+          color: "#00C0C7",
         },
-        { x: 86.5, y: 202.9, z: 14.7, name: "DE", country: "Germany" },
-        { x: 80.8, y: 91.5, z: 15.8, name: "FI", country: "Finland" },
-        { x: 80.4, y: 202.5, z: 12, name: "NL", country: "Netherlands" },
-        { x: 80.3, y: 86.1, z: 11.8, name: "SE", country: "Sweden" },
-        { x: 78.4, y: 200.1, z: 16.6, name: "ES", country: "Spain" },
-        { x: 74.2, y: 68.5, z: 14.5, name: "FR", country: "France" },
-        { x: 73.5, y: 83.1, z: 20, name: "NO", country: "Norway" },
-        { x: 71, y: 93.2, z: 24.7, name: "UK", country: "United Kingdom" },
-        { x: 69.2, y: 57.6, z: 20.4, name: "IT", country: "Italy" },
-        { x: 68.6, y: 20, z: 16, name: "RU", country: "Russia" },
-        { x: 65.5, y: 126.4, z: 35.3, name: "US", country: "United States" },
-        { x: 65.4, y: 50.8, z: 28.5, name: "HU", country: "Hungary" },
-        { x: 63.4, y: 51.8, z: 15.4, name: "PT", country: "Portugal" },
-        { x: 64, y: 82.9, z: 31.3, name: "NZ", country: "New Zealand" },
+        {
+          x: 95,
+          y: 86.98209428149644,
+          z: 42.89938757655293,
+          name: "kombucha",
+          country: "kombucha",
+          color: "#E8871A",
+        },
+        {
+          x: 91,
+          y: 43.176743212991886,
+          z: 40.86832895888014,
+          name: "store locator",
+          country: "store locator",
+          color: "#E8871A",
+        },
+        {
+          x: 86,
+          y: 75.61616778435406,
+          z: 38.062117235345582,
+          name: "seltzer",
+          country: "seltzer",
+          color: "#DA3490",
+        },
+        {
+          x: 80,
+          y: 72.07,
+          z: 37.2555,
+          name: "gift certificate",
+          country: "gift certificate",
+          color: "#9089FA",
+        },
+        {
+          x: 77,
+          y: 80.1,
+          z: 34.9,
+          name: "dextrose",
+          country: "dextrose",
+          color: "#00C0C7",
+        },
+        {
+          x: 72,
+          y: 68.5,
+          z: 31.59,
+          name: "no",
+          country: "no",
+          color: "#5144D3",
+        },
+        {
+          x: 69,
+          y: 29.67,
+          z: 29.4,
+          name: "beer",
+          country: "beer",
+          color: "#E8871A",
+        },
+        {
+          x: 68,
+          y: 67.35,
+          z: 26.4,
+          name: "ale",
+          country: "ale",
+          color: "#DA3490",
+        },
+        {
+          x: 63,
+          y: 31.76,
+          z: 25.64,
+          name: "kegerator",
+          country: "kegerator",
+          color: "#9089FA",
+        },
+        {
+          x: 59,
+          y: 31.07,
+          z: 25.64,
+          name: "cranberry",
+          country: "cranberry",
+          color: "#00C0C7",
+        },
+        {
+          x: 52,
+          y: 70.4,
+          z: 22.64,
+          name: "premium edition",
+          country: "premium edition",
+          color: "#5144D3",
+        },
+        {
+          x: 47,
+          y: 71.9,
+          z: 21.83,
+          name: "killians red",
+          country: "killians red",
+          color: "#E8871A",
+        },
+        {
+          x: 47,
+          y: 5.8,
+          z: 20.833,
+          name: "discounts",
+          country: "discounts",
+          color: "#DA3490",
+        },
+        {
+          x: 44,
+          y: 4.25,
+          z: 18.833,
+          name: "status",
+          country: "status",
+          color: "#9089FA",
+        },
+        {
+          x: 40,
+          y: 52.9,
+          z: 16.83,
+          name: "grainfather",
+          country: "grainfather",
+          color: "#5144D3",
+        },
+        {
+          x: 39,
+          y: 35.9,
+          z: 15.3,
+          name: "carbonatio",
+          country: "carbonatio",
+          color: "#E8871A",
+        },
+        {
+          x: 34,
+          y: 60.9,
+          z: 12.3,
+          name: "sugar conversion",
+          country: "sugar conversion",
+          color: "#DA3490",
+        },
+        {
+          x: 30,
+          y: 22.9,
+          z: 10.3,
+          name: "wort chiller",
+          country: "wort chiller",
+          color: "#9089FA",
+        },
       ],
     },
   ],
@@ -176,19 +306,19 @@ const App = () => (
           <table id="customers">
             <tr>
               <th>Search Terms</th>
-              <th>Lost Engagement</th>
+              <th>Lost Engagement(%)</th>
               <th>Search Count</th>
               <th width="200px"></th>
               <th>Category</th>
               <th>Sessions</th>
             </tr>
             <tr>
-              <td>Alfreds Futterkiste</td>
-              <td>Maria Anders</td>
-              <td>Germany </td>
+              <td>christmas</td>
+              <td>47.56</td>
+              <td>99</td>
               <td>
                 <Sparklines
-                  data={[5, 20, 5, 20]}
+                  data={[5, 20, 56, 41]}
                   limit={5}
                   width={200}
                   height={20}
@@ -197,13 +327,13 @@ const App = () => (
                   <SparklinesLine color="lightBlue" />
                 </Sparklines>
               </td>
-              <td>Maria Anders</td>
-              <td>Germany</td>
+              <td>Festive</td>
+              <td>80k</td>
             </tr>
             <tr>
-              <td>Berglunds snabbköp</td>
-              <td>Christina Berglund</td>
-              <td>Sweden</td>
+              <td>kombucha</td>
+              <td>42.89</td>
+              <td>95</td>
               <td>
                 <Sparklines
                   data={[5, 20, 5, 20]}
@@ -215,16 +345,16 @@ const App = () => (
                   <SparklinesLine color="lightBlue" />
                 </Sparklines>
               </td>{" "}
-              <td>Maria Anders</td>
-              <td>Germany</td>
+              <td>Beverages</td>
+              <td>80k</td>
             </tr>
             <tr>
-              <td>Centro comercial Moctezuma</td>
-              <td>Francisco Chang</td>
-              <td>Mexico</td>
+              <td>store locator</td>
+              <td>40.86</td>
+              <td>91</td>
               <td>
                 <Sparklines
-                  data={[5, 20, 5, 20]}
+                  data={[5, 20, 80, 40]}
                   limit={5}
                   width={200}
                   height={20}
@@ -233,16 +363,16 @@ const App = () => (
                   <SparklinesLine color="lightBlue" />
                 </Sparklines>
               </td>{" "}
-              <td>Maria Anders</td>
-              <td>Germany</td>
+              <td>Location</td>
+              <td>77k</td>
             </tr>
             <tr>
-              <td>Ernst Handel</td>
-              <td>Roland Mendel</td>
-              <td>Austria</td>
+              <td>seltzer</td>
+              <td>38.06</td>
+              <td>86</td>
               <td>
                 <Sparklines
-                  data={[5, 20, 5, 20]}
+                  data={[15, 5, 15, 40]}
                   limit={5}
                   width={200}
                   height={20}
@@ -251,16 +381,16 @@ const App = () => (
                   <SparklinesLine color="lightBlue" />
                 </Sparklines>
               </td>{" "}
-              <td>Maria Anders</td>
-              <td>Germany</td>
+              <td>Beverages</td>
+              <td>75k</td>
             </tr>
             <tr>
-              <td>Island Trading</td>
-              <td>Helen Bennett</td>
-              <td>UK</td>
+              <td>gift certificate</td>
+              <td>37.25</td>
+              <td>80</td>
               <td>
                 <Sparklines
-                  data={[5, 20, 5, 20]}
+                  data={[12, 20, 25, 3]}
                   limit={5}
                   width={200}
                   height={20}
@@ -269,16 +399,16 @@ const App = () => (
                   <SparklinesLine color="lightBlue" />
                 </Sparklines>
               </td>{" "}
-              <td>Maria Anders</td>
-              <td>Germany</td>
+              <td>Offers</td>
+              <td>25k</td>
             </tr>
             <tr>
-              <td>Königlich Essen</td>
-              <td>Philip Cramer</td>
-              <td>Germany</td>
+              <td>dextrose</td>
+              <td>34.90</td>
+              <td>77</td>
               <td>
                 <Sparklines
-                  data={[5, 20, 5, 20]}
+                  data={[51, 10, 15, 70]}
                   limit={5}
                   width={200}
                   height={20}
@@ -287,16 +417,16 @@ const App = () => (
                   <SparklinesLine color="lightBlue" />
                 </Sparklines>
               </td>{" "}
-              <td>Maria Anders</td>
-              <td>Germany</td>
+              <td>-</td>
+              <td>41k</td>
             </tr>
             <tr>
-              <td>Laughing Bacchus Winecellars</td>
-              <td>Yoshi Tannamuri</td>
-              <td>Canada</td>
+              <td>no</td>
+              <td>29.4</td>
+              <td>72</td>
               <td>
                 <Sparklines
-                  data={[5, 20, 5, 20]}
+                  data={[25, 50, 59, 80]}
                   limit={5}
                   width={200}
                   height={20}
@@ -305,16 +435,16 @@ const App = () => (
                   <SparklinesLine color="lightBlue" />
                 </Sparklines>
               </td>{" "}
-              <td>Maria Anders</td>
-              <td>Germany</td>
+              <td>-</td>
+              <td>2k</td>
             </tr>
             <tr>
-              <td>Magazzini Alimentari Riuniti</td>
-              <td>Giovanni Rovelli</td>
-              <td>Italy</td>
+              <td>beer</td>
+              <td>29.4</td>
+              <td>69</td>
               <td>
                 <Sparklines
-                  data={[5, 20, 5, 20]}
+                  data={[75, 20, 85, 40]}
                   limit={5}
                   width={200}
                   height={20}
@@ -323,16 +453,16 @@ const App = () => (
                   <SparklinesLine color="lightBlue" />
                 </Sparklines>
               </td>{" "}
-              <td>Maria Anders</td>
-              <td>Germany</td>
+              <td>Beverages</td>
+              <td>50k</td>
             </tr>
             <tr>
-              <td>North/South</td>
-              <td>Simon Crowther</td>
-              <td>UK</td>
+              <td>ale</td>
+              <td>25.64</td>
+              <td>68</td>
               <td>
                 <Sparklines
-                  data={[5, 20, 5, 20]}
+                  data={[53, 20, 45, 6]}
                   limit={5}
                   width={200}
                   height={20}
@@ -341,16 +471,16 @@ const App = () => (
                   <SparklinesLine color="lightBlue" />
                 </Sparklines>
               </td>
-              <td>Maria Anders</td>
-              <td>Germany</td>
+              <td>Beverages</td>
+              <td>75k</td>
             </tr>
             <tr>
-              <td>Paris spécialités</td>
-              <td>Marie Bertrand</td>
-              <td>France</td>
+              <td>kegerator</td>
+              <td>25.64</td>
+              <td>63</td>
               <td>
                 <Sparklines
-                  data={[5, 20, 5, 20]}
+                  data={[51, 89, 51, 70]}
                   limit={5}
                   width={200}
                   height={20}
@@ -359,8 +489,179 @@ const App = () => (
                   <SparklinesLine color="lightBlue" />
                 </Sparklines>
               </td>{" "}
-              <td>Maria Anders</td>
-              <td>Germany</td>
+              <td>-</td>
+              <td>30k</td>
+            </tr>
+
+            <tr>
+              <td>cranberry</td>
+              <td>25.64</td>
+              <td>59</td>
+              <td>
+                <Sparklines
+                  data={[5, 89, 51, 20]}
+                  limit={5}
+                  width={200}
+                  height={20}
+                  margin={2}
+                >
+                  <SparklinesLine color="lightBlue" />
+                </Sparklines>
+              </td>{" "}
+              <td>Beverages</td>
+              <td>60k</td>
+            </tr>
+
+            <tr>
+              <td>premium edition</td>
+              <td>22.64</td>
+              <td>52</td>
+              <td>
+                <Sparklines
+                  data={[1, 8, 51, 20]}
+                  limit={5}
+                  width={200}
+                  height={20}
+                  margin={2}
+                >
+                  <SparklinesLine color="lightBlue" />
+                </Sparklines>
+              </td>{" "}
+              <td>-</td>
+              <td>9k</td>
+            </tr>
+
+            <tr>
+              <td>killians red</td>
+              <td>21.83</td>
+              <td>47</td>
+              <td>
+                <Sparklines
+                  data={[12, 4, 47, 84]}
+                  limit={5}
+                  width={200}
+                  height={20}
+                  margin={2}
+                >
+                  <SparklinesLine color="lightBlue" />
+                </Sparklines>
+              </td>{" "}
+              <td>Beverages</td>
+              <td>56k</td>
+            </tr>
+
+            <tr>
+              <td>discounts</td>
+              <td>20.833</td>
+              <td>47</td>
+              <td>
+                <Sparklines
+                  data={[12, 89, 56, 23]}
+                  limit={5}
+                  width={200}
+                  height={20}
+                  margin={2}
+                >
+                  <SparklinesLine color="lightBlue" />
+                </Sparklines>
+              </td>{" "}
+              <td>-</td>
+              <td>60k</td>
+            </tr>
+
+            <tr>
+              <td>status</td>
+              <td>18.833</td>
+              <td>44</td>
+              <td>
+                <Sparklines
+                  data={[31, 39, 81, 20]}
+                  limit={5}
+                  width={200}
+                  height={20}
+                  margin={2}
+                >
+                  <SparklinesLine color="lightBlue" />
+                </Sparklines>
+              </td>{" "}
+              <td>-</td>
+              <td>20k</td>
+            </tr>
+
+            <tr>
+              <td>grainfather</td>
+              <td>16.83</td>
+              <td>40</td>
+              <td>
+                <Sparklines
+                  data={[21, 69, 83, 10]}
+                  limit={5}
+                  width={200}
+                  height={20}
+                  margin={2}
+                >
+                  <SparklinesLine color="lightBlue" />
+                </Sparklines>
+              </td>{" "}
+              <td>-</td>
+              <td>50k</td>
+            </tr>
+
+            <tr>
+              <td>carbonatio</td>
+              <td>15.3</td>
+              <td>39</td>
+              <td>
+                <Sparklines
+                  data={[12, 23, 5, 60]}
+                  limit={5}
+                  width={200}
+                  height={20}
+                  margin={2}
+                >
+                  <SparklinesLine color="lightBlue" />
+                </Sparklines>
+              </td>{" "}
+              <td>-</td>
+              <td>8k</td>
+            </tr>
+
+            <tr>
+              <td>sugar conversion</td>
+              <td>12.3</td>
+              <td>34</td>
+              <td>
+                <Sparklines
+                  data={[38, 33, 71, 20]}
+                  limit={5}
+                  width={200}
+                  height={20}
+                  margin={2}
+                >
+                  <SparklinesLine color="lightBlue" />
+                </Sparklines>
+              </td>{" "}
+              <td>-</td>
+              <td>1k</td>
+            </tr>
+
+            <tr>
+              <td>wort chiller</td>
+              <td>10.3</td>
+              <td>30</td>
+              <td>
+                <Sparklines
+                  data={[45, 23, 12, 90]}
+                  limit={5}
+                  width={200}
+                  height={20}
+                  margin={2}
+                >
+                  <SparklinesLine color="lightBlue" />
+                </Sparklines>
+              </td>{" "}
+              <td>-</td>
+              <td>20k</td>
             </tr>
           </table>
         </div>
